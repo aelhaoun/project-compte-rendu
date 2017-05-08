@@ -9,17 +9,17 @@ import HeaderBlock from '../components/project/HeaderBlock'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import theme from '../src/material_ui_raw_theme_file'
 
-import {Card} from 'material-ui/Card';
+import { Card } from 'material-ui/Card';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = this.props.previewState;
   }
 
   render() {
     let isClosed = this.props.isClosed;
+    let isFullScreen = this.props.isFullScreen;
     return (
       <div>
         <MuiThemeProvider muiTheme={theme}>
@@ -28,7 +28,7 @@ class App extends Component {
             <div className='main-container'>
               <ProjectInformation />
               <div className="flex-container">
-                {!this.props.isFullScreen && 
+                {!isFullScreen && 
                 <div className={"flex-1-container " + (isClosed ?  "" : "padding-right")}>
                   <MeetingList />
                 </div>}
@@ -51,7 +51,8 @@ class App extends Component {
 }
 
 App.propTypes = {
-
+  isClosed: React.PropTypes.object.isRequired,
+  isFullScreen: React.PropTypes.object.isRequired
 };
 
 function mapStateToProps(state) {
@@ -60,8 +61,6 @@ function mapStateToProps(state) {
       isFullScreen: state.previewState.isFullScreen
   };
 }
-
-
 
 export default connect(
   mapStateToProps
