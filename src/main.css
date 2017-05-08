@@ -1,0 +1,70 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0px;
+  height: 100%;
+  background: #E0E0E0;
+}
+
+.main-container {
+    width: auto;
+    padding: 10px 5%;
+}
+
+.list-container {
+	margin-top: 10px;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-1-container {
+	flex: 1;
+}
+
+.verical-center {
+	align-items: center;
+}    
+
+.flex-2-container {
+	flex: 2;
+}
+
+.space-beween {
+	justify-content: space-between;
+}
+
+.padding-left {
+	padding-left: 10px;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.padding-right {
+  padding-right: 10px;
+}
+
+.compte-rendu-item {
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.compte-rendu-item:hover {
+  background: lightgrey;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
