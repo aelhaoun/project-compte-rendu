@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-          <AppBar title="Meeting list" />
+          <AppBar title="Compte Rendu du projet" />
       </header>
     );
   }
