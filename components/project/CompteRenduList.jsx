@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import * as types from '../../constants/CompteRenduTypes';
 
-import {List, ListItem} from 'material-ui/List';
+import {List} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import QuestionIcon from 'material-ui/svg-icons/action/help';
 import InfoIcon from 'material-ui/svg-icons/action/info';

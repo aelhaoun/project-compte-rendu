@@ -26,11 +26,11 @@ class MeetingDetail extends Component {
 
 				<div className="flex-container padding-right">
 					<div className="flex-1-container">
-						<h3 className="margin-left">List des participants</h3>
+						<h3>List des participants</h3>
 						<ParticipantList />
 					</div>
 					<div className="flex-1-container">
-						<h3 className="margin-left">List des comptes rendus</h3>
+						<h3>List des comptes rendus</h3>
 						<CompteRenduList />
 					</div>
 				</div>
