@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
-import {Card} from 'material-ui/Card';
+import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
+import { Card } from 'material-ui/Card';
 import dateformat from 'dateformat';
 
-import { getMeetingList, displayDetailMeeting, openMeetingPreview} from '../../actions/projectActions';
+import { getMeetingList, displayDetailMeeting, openMeetingPreview } from '../../actions/projectActions';
+
 class MeetingList extends React.Component {
 
   constructor(props) {
@@ -26,8 +27,6 @@ class MeetingList extends React.Component {
     this.props.openMeetingPreview();
   }
     
-  handleChange = (event, index, value) => this.setState({value});
-
   componentWillMount() {
     this.props.getMeetingList();
   }

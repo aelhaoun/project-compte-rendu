@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import {List, ListItem} from 'material-ui/List';
-import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
 import PersonIcon from 'material-ui/svg-icons/social/person';
 
