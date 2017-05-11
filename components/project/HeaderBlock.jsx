@@ -4,8 +4,8 @@ import {connect} from 'react-redux';
 
 import IconButton from 'material-ui/IconButton';
 import CloseIcon from 'material-ui/svg-icons/navigation/close';
-import FullScreenIcon from 'material-ui/svg-icons/navigation/fullScreen';
-import FullScreenExitIcon from 'material-ui/svg-icons/navigation/fullScreen-exit';
+import FullScreenIcon from 'material-ui/svg-icons/navigation/fullscreen';
+import FullScreenExitIcon from 'material-ui/svg-icons/navigation/fullscreen-exit';
 
 
 import { closeMeetingPreview, toggleFullScreenPreview } from '../../actions/projectActions';
